@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saved Billers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <span class="back">&larr;</span>
+      <h2>Saved Billers</h2>
+    </header>
+
+    <section class="biller-icons">
+      <div class="biller-item">
+        <img src="../images/bolt-solid.svg" alt="Electricity" />
+        <p>Electricity</p>
+      </div>
+      <div class="biller-item">
+        <img src="../images/droplet-solid.svg" alt="Water" />
+        <p>Water</p>
+      </div>
+      <div class="biller-item">
+        <img src="../images/fire-flame-simple-solid.svg" alt="Gas" />
+        <p>Gas</p>
+      </div>
+      <div class="biller-item">
+        <img src="../images/mobile-solid.svg" alt="Mobile" />
+        <p>Mobile</p>
+      </div>
+      <div class="biller-item">
+        <img src="../images/wifi-solid.svg" alt="Wi-Fi" />
+        <p>Wi-Fi</p>
+      </div>
+      <div class="biller-item">
+        <img src="../images/tag-solid.svg" alt="Others" />
+        <p>Others</p>
+      </div>
+    </section>
+
+    <a href="../kanbank-add-biller/index.html" class="add-biller" style="text-decoration: none;">
+      <div class="plus-icon">+</div>
+      <span>Add new biller</span>
+    </a>
+
+    <div class="form">
+        <div class="input-wrapper">
+           <input type="text" id="amountInput" placeholder="Amount" />
+            <input type="date" id="dueDateInput" /> 
+        </div>
+        <button class="pay-button">Pay Now</button>
+    </div>
+
+    <section class="bills">
+        <div class="bill-item">
+            <div class="image-wrapper">
+                <img src="../images/Vector.png" alt="Shopping" />
+            </div>
+            <div class="bill-details"> 
+                <p class="category">Shopping ▼</p>
+            </div>
+        </div>
+
+        <div class="bill-item">
+        <div class="bill-details">
+            <p class="desc">Cottonon Jackets</p>
+            <p class="date">14 Oct 2025</p>
+        </div>
+        <span class="amount">$59.00</span>
+        </div>
+
+        <div class="bill-item">
+        <div class="image-wrapper">
+            <img src="../images/vegan 2.png" alt="Health" />
+        </div>
+        <div class="bill-details">
+          <p class="category">Health ▼</p>
+          
+        </div>
+        
+        </div>
+        
+        <div class="bill-item">
+            <div class="bill-details">
+                <p class="desc">Allianz Insurance</p>
+                <p class="date">8 Oct 2025</p>
+            </div>
+            <span class="amount">$30.00</span>
+        </div>
+
+    </section>
+
+    <nav class="bottom-nav">
+      <div class="nav-item" id="homeNav">
+        <img src="../images/house-solid.svg" alt="Home" />
+        <span>Home</span>
+      </div>
+      <div class="nav-item" id="accountsNav">
+        <img src="../images/users-solid.svg" alt="Accounts" />
+        <span>Accounts</span>
+      </div>
+      <div class="nav-item" id="settingsNav">
+        <img src="../images/gears-solid.svg" alt="Settings" />
+        <span>Settings</span>
+      </div>
+    </nav>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

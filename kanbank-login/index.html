@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KanBank Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="loading-screen" style="display: none;">
+  <div class="spinner"></div>
+  </div>
+  <div class="login-container">
+    <div class="logo">
+      <img src="../images/logo.png" alt="KanBank Logo" width="120" />
+    </div>
+    <img src="../images/profile.png" alt="User" class="profile-img" />
+
+    <input type="text" class="input-field" placeholder="E-mail / Phone number" />
+    <input type="password" class="input-field" placeholder="Password" />
+
+    <a href="#" class="forgot-password">Forgot Password</a>
+
+    <button id="loginBtn" class="login-btn">LOGIN</button>
+
+    <div class="secure-text">
+      🔐 Secure login with encryption
+    </div>
+
+    <div id="resetMessage" class="reset-message" style="display: none;">
+      ✅ Reset link has been sent to your email.
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

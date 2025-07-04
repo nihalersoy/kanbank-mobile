@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kan Bank - Transfer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+        <div class="top-bar">
+            <img src="../images/logo.png" alt="Kan Bank Logo"   class="logo" />
+        </div>
+        <header class="top-header">
+          <p class="account-title">Current Account</p>
+        </header>
+
+        <div class="card-balance">
+          <p class="card-title">Balance</p>
+          <p class="card-amount">1,000.00</p>
+        </div>
+
+        <div class="indicator-wrapper">
+            <div class="indicator"></div>
+            <div class="dot"></div>
+        </div>
+
+        <form class="transfer-form">
+          <input type="text" id="recipientInput" placeholder="Recipient Account" />
+          <input type="text" id="transferAmountInput" placeholder="Amount" />
+          <button type="submit">Confirm Transfer</button>
+        </form>
+
+        <h3>Recent Transactions</h3>
+        <section class="transactions">
+          <div class="transaction-item">
+                <div class="logo-wrapper">
+                    <div class="img-background">
+                        <img src="../images/house-medical-circle-check-solid.svg" alt="Rent Icon" />
+                    </div>
+                    <div class="text-wrapper">
+                        <p class="desc">Rent</p>
+                        <p class="date">27 Jun 2025</p>
+                    </div>
+                </div>
+                <span class="transaction-negative">- £680.00</span>
+          </div>
+
+          <div class="transaction-item">
+                <div class="logo-wrapper">
+                    <div class="img-background">
+                    <img src="../images/mobile-screen-button-solid.svg" alt="Mobile Bill Icon" />
+                    </div>
+                    <div class="text-wrapper">
+                    <p class="desc">Mobile Bill</p>
+                    <p class="date">24 Jun 2025</p>
+                    </div>
+                </div>
+                <span class="transaction-negative">- £25.00</span>
+          </div>
+        </section>
+
+        <nav class="bottom-nav">
+            <div class="nav-item" id="homeNav">
+                <img src="../images/house-solid.svg" alt="Home" />
+                <span>Home</span>
+            </div>
+            <div class="nav-item active" id="accountsNav">
+                <img src="../images/users-solid.svg" alt="Accounts" />
+                <span>Accounts</span>
+            </div>
+            <div class="nav-item" id="settingsNav">
+                <img src="../images/gears-solid.svg" alt="Settings" />
+                <span>Settings</span>
+            </div>
+        </nav>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>

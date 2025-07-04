@@ -1,0 +1,109 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #121433;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      width: 100%;
+      max-width: 375px;
+      padding: 2rem;
+      color: #ffffff;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 1rem auto;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 6px;
+      background-color: #f1f4fb;
+      margin-bottom: 1rem;
+    }
+
+    .forgot-password {
+      color: #c3baff;
+      font-size: 0.875rem;
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    .login-btn {
+      background-color: #f1f4fb;
+      color: #121433;
+      padding: 0.75rem;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      cursor: pointer;
+    }
+
+    .login-btn:hover {
+      background-color: #FFE867;
+      color: #121433;
+    }
+
+    .secure-text {
+      font-size: 0.875rem;
+      text-align: center;
+      color: #d3d3ff;
+      text-decoration: underline;
+    }
+
+    #loading-screen {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background-color: #00000088;
+        z-index: 999;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .spinner {
+        width: 40px;
+        height: 40px;
+        border: 5px solid #fff;
+        border-top: 5px solid #2567F9;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .reset-message {
+  color: #29f86f;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}

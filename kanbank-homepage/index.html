@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kan Bank - Home</title>
+  <!-- Google Fonts: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header class="top-header">
+            <img src="../images/logo.png" alt="Kan Bank Logo" class="logo" />
+        </header>
+
+        <div class="welcome">
+          <h2>Welcome, Jane</h2>
+          <p class="balance-label">Total Balance</p>
+          <p class="balance-value"><span>£ 1,000.00</span> 
+            <span class="balance-increase">20% ↑</span>
+          </p>
+        </div>
+
+        <div class="action-icons">
+        <div class="action-wrapper">
+            <div class="action-button">
+                <img src="../images/money-bill-transfer-solid.svg" alt="Transfer" />
+            </div>
+
+            <div class="action-text">
+                <span>Transfer</span>
+                <span>Money</span>
+            </div>
+        </div>
+
+        <div class="action-wrapper">
+            <div class="action-button">
+                <img src="../images/receipt-solid.svg" alt="Pay Bills" />
+            </div>
+
+            <div class="action-text">
+                <span>Pay</span>
+                <span>Bills</span>
+            </div>
+        </div>
+
+        <div class="action-wrapper">
+            <div class="action-button">
+                <img src="../images/coins-solid.svg" alt="Regular Payments" />
+            </div>
+            <div class="action-text">
+                <span>Regular</span>
+                <span>Payments</span>
+            </div>
+        </div>
+            
+        </div>
+
+        <h3>Recent Transactions</h3>
+        <section class="transactions">
+            <div class="transaction-item">
+                <div class="left">
+                    <span class="transaction-negative">← £680.00</span>
+                    <p class="date">27.6.2025</p>
+                </div>
+                <div class="right">
+                    <p class="desc">John Smith - Rent</p>
+                </div>
+            </div>
+            <div class="transaction-item">
+                <div class="left">
+                    <span class="transaction-negative">← £25.50</span>
+                    <p class="date">24.6.2025</p>
+                </div>
+                <div class="right">
+                    <p class="desc">Vodafone - Mobile bill</p>
+                </div>
+            </div>
+
+            <div class="transaction-item">
+                  <div class="left">
+                      <span class="transaction-positive">→ £250.00</span>
+                      <p class="date">12.5.2025</p>
+                  </div>
+                  <div class="right">
+                      <p class="desc">Priya Patel - Birthday...</p>
+                  </div>
+            </div>
+
+            <a href="#" class="see-more">See More...</a>
+        </section>
+
+        <nav class="bottom-nav">
+            <div class="nav-item" id="homeNav">
+                <img src="../images/house-solid.svg" alt="Home" />
+                <span>Home</span>
+            </div>
+            <div class="nav-item" id="accountsNav">
+                <img src="../images/users-solid.svg"      alt="Accounts" />
+                <span>Accounts</span>
+            </div>
+            <div class="nav-item" id="settingsNav">
+                <img src="../images/gears-solid.svg"      alt="Settings" />
+                <span>Settings</span>
+            </div>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

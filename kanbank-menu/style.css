@@ -1,0 +1,135 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0f0f2d;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 375px;
+  margin: auto;
+  padding: 15px;
+}
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.profile {
+  height: 60px;
+  border-radius: 50%;
+}
+
+.settings-menu {
+  background-color: #394a6d;
+  border-radius: 0 20px 0 0;
+  padding: 20px;
+  color: #fff;
+}
+
+.settings-menu :nth-child(7){
+    margin-bottom: 30px;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.menu-header .arrow {
+  font-size: 40px;
+}
+
+.settings-option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.settings-option:hover {
+  background-color: #2c3e50;
+  cursor: pointer;
+}
+
+.settings-option img {
+  padding: 8px;
+  border-radius: 10px;
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) saturate(100%) invert(99%) sepia(4%) saturate(30%) hue-rotate(182deg) brightness(105%) contrast(100%);
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #FF4B5C;
+  font-weight: 600;
+  padding: 20px;
+  justify-content: flex-end;
+  font-size: 28px;
+  padding-right: 10px;
+}
+
+.logout span:hover{
+    color: #F2F7FF;
+    cursor: pointer;
+}
+
+.logout img {
+  width: 32px;
+  filter: brightness(0) saturate(100%) invert(41%) sepia(97%) saturate(1115%) hue-rotate(328deg) brightness(100%) contrast(95%);
+}
+
+#loading-screen{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.spinner {
+  border: 6px solid #ccc;
+  border-top: 6px solid #2567F9;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-text {
+  font-size: 24px;
+  color: #2c3e50;
+  font-family: 'Montserrat', sans-serif;
+}

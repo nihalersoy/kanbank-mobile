@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add New Biller</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <span class="back" onclick="window.location.href='../kanbank-pay-bills/index.html'">&larr;</span>
+      <h2>Add New Biller</h2>
+    </header>
+
+    <form class="biller-form">
+      <label for="billerName">Biller Name</label>
+      <input type="text" id="billerName" placeholder="e.g., Electricity, Gas" required />
+
+      <label for="billerCategory">Category</label>
+      <select id="billerCategory">
+        <option>Utilities</option>
+        <option>Mobile</option>
+        <option>Internet</option>
+        <option>Other</option>
+      </select>
+
+      <label for="accountNumber">Account Number</label>
+      <input type="text" id="accountNumber" placeholder="e.g., 1234567890" required />
+
+      <label for="dueDate">Due Date</label>
+      <input type="date" id="dueDate" required />
+
+      <button type="submit" class="submit-button">Save Biller</button>
+    </form>
+
+    <div id="billerMessage" class="biller-message" style="display: none;">
+      ✅ New biller added successfully!
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

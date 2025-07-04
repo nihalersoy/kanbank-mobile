@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #121433;
+  color: white;
+}
+
+.container {
+  max-width: 375px;
+  margin: auto;
+  padding: 15px;
+}
+
+header span.back {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+header span.back:hover {
+  color: #29F86F;
+}
+
+.biller-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.biller-form label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.biller-form input,
+.biller-form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+}
+
+.submit-button {
+  background-color: #29F86F;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+}
