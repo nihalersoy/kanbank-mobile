@@ -29,7 +29,7 @@ body {
   padding: 20px;
   text-align: left;
   color: #ffffff;
-  background-image: url('../images/card-background.png');
+  background-image: url('/images/card-background.png');
   background-size: cover;
   background-position: center;
 }
